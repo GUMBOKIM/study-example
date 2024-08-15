@@ -1,4 +1,4 @@
-import { Link, Route, Router, useParams } from "./gumbo-router-dom";
+import { Link, Route, Routes, useParams } from "./gumbo-router-dom";
 
 const Home = () => <h1>Home Page</h1>;
 const UserProfile = () => {
@@ -15,10 +15,10 @@ const App = () => (
         <li><Link to="/user/2">User 2</Link></li>
       </ul>
     </nav>
-      <Router>
-    <Route path="/" component={Home} exact />
-    <Route path="/user/:id" component={UserProfile} />
-  </Router>
+    <Routes>
+      <Route path="/" component={Home} exact />
+      <Route path="/user/:id" component={UserProfile} />
+    </Routes>
   </>
 );
 

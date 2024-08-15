@@ -2,11 +2,11 @@ import { ReactElement, Children, isValidElement } from 'react';
 import { useRouter } from '../hooks/useRouter';
 import { matchPath } from '../utils';
 
-interface RouterProps {
+interface RoutesProps {
   children: React.ReactNode;
 }
 
-export const Router = ({ children }: RouterProps) => {
+export const Routes = ({ children }: RoutesProps) => {
   const { currentPath } = useRouter();
 
   let match: ReactElement | null = null;
