@@ -1,8 +1,9 @@
+import { ReactNode } from 'react';
 import { useRouter } from '../useRouter';
 
 interface LinkProps {
   to: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export const Link = ({ to, children }: LinkProps) => {

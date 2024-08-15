@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, ComponentType } from 'react';
 import { useRouter } from '../useRouter';
 import { matchPath } from '../utils';
 
@@ -7,7 +7,7 @@ import { matchPath } from '../utils';
 // exact는 경로가 정확히 일치해야만 매칭되도록 하는 선택적 속성입니다.
 interface RouteProps {
   path: string;
-  component: React.ComponentType;
+  component: ComponentType;
   exact?: boolean;
 }
 
@@ -33,5 +33,5 @@ export const Route = ({ path, component: Component, exact = false }: RouteProps)
   if (!match || (exact && !match.isExact)) return null;
 
   // 경로가 매칭되면 해당 컴포넌트를 렌더링하며, 경로 파라미터를 props로 전달합니다.
-  return <Component {...params} />;
+  return <Component />;
 };

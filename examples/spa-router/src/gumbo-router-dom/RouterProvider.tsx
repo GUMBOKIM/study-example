@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, ReactNode } from 'react';
 import { RouterContext } from './RouterContext';
 import { matchPath } from './utils';
 
 interface RouterProviderProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 // RouterProvider 컴포넌트는 라우팅 상태를 관리하고, 이를 하위 컴포넌트에 제공하는 역할을 합니다.

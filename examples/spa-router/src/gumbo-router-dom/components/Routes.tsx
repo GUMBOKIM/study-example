@@ -1,9 +1,9 @@
-import { ReactElement, Children, isValidElement } from 'react';
+import { ReactElement, ReactNode, Children, isValidElement } from 'react';
 import { useRouter } from '../useRouter';
 import { matchPath } from '../utils';
 
 interface RoutesProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 // Routes 컴포넌트는 전달된 자식 컴포넌트 중 현재 경로와 매칭되는 첫 번째 Route 컴포넌트를 렌더링합니다.
