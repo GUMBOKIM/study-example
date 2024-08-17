@@ -2,4 +2,3 @@
 echo "pre-commit hook start"
 pnpm lint-staged
 echo "pre-commit hook end"
-exit 0;
