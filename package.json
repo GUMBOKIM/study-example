@@ -1,40 +1,17 @@
 {
-    "name": "FE-Study",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "lint": "eslint 'src/**/*.{js,ts,jsx,tsx}'",
-        "format": "prettier --write 'src/**/*.{js,ts,jsx,tsx,json,css}'"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "packageManager": "pnpm@9.0.6+sha256.0624e30eff866cdeb363b15061bdb7fd9425b17bc1bb42c22f5f4efdea21f6b3",
-    "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^8.1.0",
-        "@typescript-eslint/parser": "^8.1.0",
-        "eslint": "^9.9.0",
-        "eslint-config-prettier": "^9.1.0",
-        "eslint-plugin-jsx-a11y": "^6.9.0",
-        "eslint-plugin-prettier": "^5.2.1",
-        "eslint-plugin-react": "^7.35.0",
-        "eslint-plugin-react-hooks": "^5.1.0-rc.0",
-        "husky": "^9.1.4",
-        "lint-staged": "^15.2.9",
-        "prettier": "^3.3.3"
-    },
-    "lint-staged": {
-        "*.{js,ts,jsx,tsx}": [
-            "eslint --fix",
-            "prettier --write"
-        ],
-        "*.css": [
-            "prettier --write"
-        ],
-        "*.json": [
-            "prettier --write"
-        ]
-    }
+  "name": "FE-Study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.0.6+sha256.0624e30eff866cdeb363b15061bdb7fd9425b17bc1bb42c22f5f4efdea21f6b3",
+  "devDependencies": {
+    "biome": "^0.3.3",
+    "husky": "^9.1.4"
+  }
 }

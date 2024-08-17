@@ -1,5 +1,0 @@
-{
-    "include": ["vite.config.ts", "src"],
-    "files": [],
-    "references": [{ "path": "../../tsconfig.json" }]
-}
