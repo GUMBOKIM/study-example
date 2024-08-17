@@ -1,4 +1,10 @@
 #!/usr/bin/env sh
 echo "pre-commit hook start"
 pnpm lint-staged
+
+if [ $? -ne 0 ]; then
+  echo "Lint-staged failed, aborting commit."
+  exit 1
+fi
+
 echo "pre-commit hook end"

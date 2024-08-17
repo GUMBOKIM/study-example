@@ -15,7 +15,7 @@ module.exports = [
     js.configs.recommended,
     ...compat.extends('plugin:react/recommended'),
     ...compat.extends('plugin:@typescript-eslint/recommended'),
-    ...compat.extends(prettierConfig),
+    prettierConfig,
     {
         files: ['**/*.ts', '**/*.tsx'],
         languageOptions: {
