@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 echo "pre-commit hook start"
-pnpm run lint
+pnpm lint-staged
 echo "pre-commit hook end"
 exit 0;
