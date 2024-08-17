@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+echo "pre-commit hook start"
+. "$(dirname "$0")/h"
+echo "pre-commit hook end"
+exit 0;
